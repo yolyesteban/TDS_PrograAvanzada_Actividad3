@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenido">
+
+        <div>
+            <form id="form-fecha">
+                <label class="title">Consultar clima y temperatura por fecha</label>
+                <input type="date" id="fecha" required />
+                <input type="submit" value="Consultar" />
+            </form>
+        </div>
+        <div id="resultado-fecha">
+            <label id="fecha-r"></label> <br /><br />
+            <label id="temperatura-r"></label> <br />
+            <label id="clima-r"></label> <br />
+            <img src="" id="img-clima-r" width="100" height="100" />
+        </div>
+    
+    
+        <div>
+            <form id="form-hoy">
+                <label class="title">Consultar el clima y temperatura de hoy</label>
+                <input type="submit" value="Consultar" />
+            </form>
+        </div>
+        <div id="resultado-hoy">
+            <label id="fecha-h"></label> <br /><br />
+            <label id="temperatura-h"></label> <br />
+            <label id="clima-h"></label> <br />
+            <img src="" id="img-clima-h" width="100" height="100" />
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="index.js">
+    </script>    
+</body>
+</html>
