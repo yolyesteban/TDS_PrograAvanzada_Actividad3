@@ -1,19 +1,19 @@
 let form_fecha = document.getElementById('form-fecha');
-let form_hoy = document.getElementById('form-hoy');
+let form_fecha_hoy = document.getElementById('form-fecha-hoy');
 
-let fecha_city = document.getElementById('fecha-city');
-let fecha_r = document.getElementById('fecha-r');
-let temperatura_r = document.getElementById('temperatura-r');
-let clima_r = document.getElementById('clima-r');
-let img_clima_r = document.getElementById('img-clima-r');
-img_clima_r.style.visibility = 'hidden';
+let fecha_city_1 = document.getElementById('fecha-city-1');
+let fecha_1 = document.getElementById('fecha-1');
+let temperatura_1 = document.getElementById('temperatura-1');
+let clima_1 = document.getElementById('clima-1');
+let img_clima_1 = document.getElementById('img-clima-1');
+img_clima_1.style.visibility = 'hidden';
 
-let today_city = document.getElementById('today-city');
-let fecha_h = document.getElementById('fecha-h');
-let temperatura_h = document.getElementById('temperatura-h');
-let clima_h = document.getElementById('clima-h');
-let img_clima_h = document.getElementById('img-clima-h');
-img_clima_h.style.visibility = 'hidden';
+let fecha_city_2 = document.getElementById('fecha-city-2');
+let fecha_2 = document.getElementById('fecha-2');
+let temperatura_2 = document.getElementById('temperatura-2');
+let clima_2 = document.getElementById('clima-2');
+let img_clima_2 = document.getElementById('img-clima-2');
+img_clima_2.style.visibility = 'hidden';
 
 form_fecha.addEventListener('submit', function (evento) {
     evento.preventDefault();
@@ -28,24 +28,23 @@ form_fecha.addEventListener('submit', function (evento) {
 
     function datosFecha(temp, clim, fecha, clima_img) {
         let fecha_string = new Date(fecha);
-        today_city.innerText ='';
-        fecha_h.innerText = '';
-        temperatura_h.innerText = '';
-        clima_h.innerText = '';
-        img_clima_h.src = '';
-        img_clima_h.style.visibility = 'hidden';
+        fecha_city_2.innerText ='';
+        fecha_2.innerText = '';
+        temperatura_2.innerText = '';
+        clima_2.innerText = '';
+        img_clima_2.src = '';
+        img_clima_2.style.visibility = 'hidden';
 
-        fecha_city.innerText = 'Guatemala';
-        fecha_r.innerText = fecha_string.toDateString();
-        temperatura_r.innerText = 'Temperatura: ' + temp + ' °C';
-        clima_r.innerText = 'Clima: ' + clim;
-        img_clima_r.src = clima_img;
-        img_clima_r.style.visibility = 'visible';
+        fecha_city_1.innerText = 'Guatemala';
+        fecha_1.innerText = fecha_string.toDateString();
+        temperatura_1.innerText = temp + ' °C';
+        clima_1.innerText = clim;
+        img_clima_1.src = clima_img;
+        img_clima_1.style.visibility = 'visible';
     }
-
 });
 
-form_hoy.addEventListener('submit', function (evento) {
+form_fecha_hoy.addEventListener('submit', function (evento) {
     evento.preventDefault();
 
     let temperatura = getRandomNumber(5, 30);
@@ -56,19 +55,19 @@ form_hoy.addEventListener('submit', function (evento) {
 
     function datosHoy(temp, clim, clim_img) {
         let fecha_hoy = new Date();
-        fecha_city.innerText = '';
-        fecha_r.innerText = '';
-        temperatura_r.innerText = '';
-        clima_r.innerText = '';
-        img_clima_r.src = '';
-        img_clima_r.style.visibility = 'hidden';
+        fecha_city_1.innerText = '';
+        fecha_1.innerText = '';
+        temperatura_1.innerText = '';
+        clima_1.innerText = '';
+        img_clima_1.src = '';
+        img_clima_1.style.visibility = 'hidden';
 
-        today_city.innerText = 'Guatemala';
-        fecha_h.innerText = fecha_hoy.toDateString();
-        temperatura_h.innerText = 'Temperatura: ' + temp + ' °C';
-        clima_h.innerText = 'Clima: ' + clim;
-        img_clima_h.src = clim_img;
-        img_clima_h.style.visibility = 'visible';
+        fecha_city_2.innerText = 'Guatemala';
+        fecha_2.innerText = fecha_hoy.toDateString();
+        temperatura_2.innerText =  temp + ' °C';
+        clima_2.innerText = clim;
+        img_clima_2.src = clim_img;
+        img_clima_2.style.visibility = 'visible';
     }
 });
 
@@ -104,8 +103,6 @@ function getClimaImg(valueImg) {
             img_source = "https://img.icons8.com/doodle/96/000000/partly-cloudy-day--v1.png";
             break;
         case "Lluvioso":
-            // img_source = "https://img.icons8.com/external-smashingstocks-circular-smashing-stocks/65/000000/external-rainy-day-weather-smashingstocks-circular-smashing-stocks.png";
-            //img_source = "https://img.icons8.com/external-kosonicon-lineal-color-kosonicon/64/000000/external-rainy-weather-kosonicon-lineal-color-kosonicon.png";
             img_source = "https://img.icons8.com/external-dreamcreateicons-outline-color-dreamcreateicons/452/external-rain-weather-dreamcreateicons-outline-color-dreamcreateicons-3.png" ;
             break;
         default:
