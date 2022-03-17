@@ -1,5 +1,53 @@
 #contenido {
-    background-color: #3e518d;
+    /* background-color: #343d4b; */
+    background-color: white;
+    color: white;
 }
 
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-size: medium;
+    text-transform: uppercase;
+    padding-top: 50%;
+    margin: 3px;
+    text-align: center;
+}
 
+.title-city{
+    font-family: sans-serif;
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: 700;
+	font-size: 26px;
+}
+
+#form-fecha{
+    padding: 6px;
+}
+
+.grid-container {
+    background-color: #222831;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-image: url("https://images.unsplash.com/photo-1559963110-71b394e7494d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
+    /* filter: opacity(0.4) drop-shadow(0 0 0 rgb(165, 128, 207));  */    
+    color: white;
+    background-size: 320px;
+    height: 320px;
+}
+.grid-child{
+    text-align: center;
+}
+.grid-child-resultado {
+    background-color: #262f3d;
+    padding-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}

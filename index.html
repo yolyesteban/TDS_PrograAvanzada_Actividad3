@@ -9,33 +9,37 @@
 </head>
 <body>
     <div id="contenido">
-
-        <div>
-            <form id="form-fecha">
-                <label class="title">Consultar clima y temperatura por fecha</label>
-                <input type="date" id="fecha" required />
-                <input type="submit" value="Consultar" />
-            </form>
+        <div class="grid-container">
+            <div class="grid-child">
+                <form id="form-fecha">
+                    <h3 class="title">Clima y temperatura por fecha</h3>
+                    <input type="date" id="fecha" required />
+                    <input type="submit" value="Consultar" />
+                </form>
+            </div>
+            <div id="resultado-fecha" class="grid-child-resultado">
+                <label id="fecha-city" class="title-city"></label><br>
+                <label id="fecha-r"></label> <br /><br />
+                <img src="" id="img-clima-r" width="100" height="100" /><br /><br />
+                <label id="temperatura-r"></label> <br />
+                <label id="clima-r"></label> <br />
+            </div>
         </div>
-        <div id="resultado-fecha">
-            <label id="fecha-r"></label> <br /><br />
-            <label id="temperatura-r"></label> <br />
-            <label id="clima-r"></label> <br />
-            <img src="" id="img-clima-r" width="100" height="100" />
-        </div>
-    
-    
-        <div>
-            <form id="form-hoy">
-                <label class="title">Consultar el clima y temperatura de hoy</label>
-                <input type="submit" value="Consultar" />
-            </form>
-        </div>
-        <div id="resultado-hoy">
-            <label id="fecha-h"></label> <br /><br />
-            <label id="temperatura-h"></label> <br />
-            <label id="clima-h"></label> <br />
-            <img src="" id="img-clima-h" width="100" height="100" />
+        <div class="grid-container">
+            <div class="grid-child">
+                <form id="form-hoy">
+                    <h3 class="title">Clima y temperatura de hoy</h3>
+                    <input type="submit" value="Consultar" />
+                </form>
+            </div>
+            <div id="resultado-hoy" class="grid-child-resultado">
+                <label id="today-city" class="title-city"></label><br>
+                <label id="fecha-h"></label> <br /><br />
+                <img src="" id="img-clima-h" width="100" height="100" /> <br /><br />
+                <label id="temperatura-h"></label> <br />
+                <label id="clima-h"></label> <br />
+                
+            </div>
         </div>
 
     </div>
